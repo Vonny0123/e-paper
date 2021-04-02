@@ -8,17 +8,17 @@ import datetime
 
 
 scopes = ['https://www.googleapis.com/auth/calendar']
-path = "/home/pi/code/calendar/"
+path = "/home/pi/code/e-paper/calendar/"
 
 try:
-    credentials = pickle.load(open(os.path.join(path, "token.pkl"), "rb"))
+    credentials = pickle.load(open(os.path.join(path, "auth/token.pkl"), "rb"))
     service = build("calendar", "v3", credentials=credentials)
     print("success")
 except Exception as e:
     print("old credentials not valid, need to authenticate")
-    flow = InstalledAppFlow.from_client_secrets_file(os.path.join(path, "client_secret.json"), scopes=scopes)
+    flow = InstalledAppFlow.from_client_secrets_file(os.path.join(path, "auth/client_secret.json"), scopes=scopes)
     credentials = flow.run_console()
-    pickle.dump(credentials, open(os.path.join(path, "token.pkl"), "wb"))
+    pickle.dump(credentials, open(os.path.join(path, "auth/token.pkl"), "wb"))
     service = build("calendar", "v3", credentials=credentials)
     
 result = service.calendarList().list().execute()
@@ -26,10 +26,10 @@ calendar_id = result['items'][0]['id']
 result = service.events().list(calendarId=calendar_id).execute()
 
 
-with open(os.path.join(path, "calendarEvents.json"), "w") as file:
+with open(os.path.join(path, "data/calendarEvents.json"), "w") as file:
     json.dump(result, file)
     
-with open(os.path.join(path, "calendarEvents.json"), "r") as file:
+with open(os.path.join(path, "data/calendarEvents.json"), "r") as file:
     result = json.load(file)
     
 item_list = []
@@ -60,6 +60,6 @@ def myconverter(o):
     if isinstance(o, datetime.date):
         return o.__str__()
 
-with open(os.path.join(path, "calendarEventsFuture.json"), "w") as file:
+with open(os.path.join(path, "data/calendarEventsFuture.json"), "w") as file:
     json.dump(item_list, file, default=myconverter)
     

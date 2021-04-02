@@ -1,2 +1,2 @@
-/calendar/token.pkl
-/calendar/client_secret.json
+/calendar/auth/token.pkl
+/calendar/auth/client_secret.json

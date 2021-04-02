@@ -13,7 +13,7 @@ def main():
         new_sizes = [os.stat(os.path.join(filepath, image)).st_size for image in images]
         proceed = new_sizes == sizes
         sizes = new_sizes
-    with open("/home/pi/code/e-paper/processed_images.txt", "r+") as file:
+    with open("/home/pi/code/e-paper/pictureFrame/processed_images.txt", "r+") as file:
         processed_images = file.read().splitlines()
         for image in images:
             if image in processed_images:
@@ -21,9 +21,9 @@ def main():
             x += 1
             try:
                 img = Image.open(os.path.join(filepath, image))
-                img = img.convert("I")
+                img = img.convert("F")
 
-                size = 296, 128
+                size = 400, 300
                 img.thumbnail(size, Image.ANTIALIAS)
                 thumb_size = img.size
 
