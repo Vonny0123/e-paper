@@ -1,22 +1,20 @@
-2021-06-22,Stay at Gull Rock, close to Tunnels Beach and Harbour
-2021-06-22,Gull Rock, close to Tunnels Beach and Harbour check in
-2021-06-25,Gull Rock, close to Tunnels Beach and Harbour check out
-2021-11-22,Mollie's Birthday
-2022-03-03,Lucy's Birthday
-2022-03-23,Jake Franklin's Birthday
-2022-02-25,Jake's Birthday
-2022-01-23,My Birthday
-2021-11-13,Joe's Birthday
-2021-08-07,Mum's Birthday
-2021-07-17,Dad's Birthday
-2021-09-03,Nan's Birthday
-2021-10-22,James's Birthday
-2021-08-13,Freddie's Birthday
-2021-12-09,Georgia's Birthday
-2021-12-23,George Holland's Birthday
-2021-09-30,Katy's Birthday
-2021-07-31,Joe Voke's Birthday
-2021-08-08,Lucy Mogford's Birthday
-2022-01-10,Jack Bissett's Birthday
-2021-08-27,Bethany Charlton's Birthday
-2021-04-01,month test
+22 Jun - Gull Rock, check in
+25 Jun - Gull Rock, check out
+17 Jul - Dad's Birthday
+31 Jul - Joe Voke's Birthday
+07 Aug - Mum's Birthday
+08 Aug - Lucy Mogford's Birthday
+13 Aug - Freddie's Birthday
+27 Aug - Bethany Charlton's Birthday
+03 Sep - Nan's Birthday
+30 Sep - Katy's Birthday
+22 Oct - James's Birthday
+13 Nov - Joe's Birthday
+22 Nov - Mollie's Birthday
+09 Dec - Georgia's Birthday
+23 Dec - George Holland's Birthday
+10 Jan - Jack Bissett's Birthday
+23 Jan - My Birthday
+25 Feb - Jake's Birthday
+03 Mar - Lucy's Birthday
+23 Mar - Jake Franklin's Birthday
